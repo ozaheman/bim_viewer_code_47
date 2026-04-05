@@ -1,0 +1,13 @@
+<h4>1. Edit Selection</h4>
+<div class="row">
+    <div><label>ID</label><input type="number" id="e-id" readonly></div>
+    <div><label>Floor</label><input type="text" id="e-floor" oninput="App.onLiveEdit()"></div>
+</div>
+<label>Material</label>
+<select id="e-mat" onchange="App.onLiveEdit()">
+    <option value="concrete">Concrete</option>
+    <option value="steel">Steel</option>
+    <option value="glass">Glass</option>
+    <option value="paint">Paint</option>
+</select>
+<!-- ... rest of edit controls ... -->
