@@ -1,0 +1,38 @@
+<h4>5. Object Stack</h4>
+<div id="object-stack">
+    <div class="stack-header">
+        <div class="object-count">Total: 0 | Visible: 0 | Isolated: 0</div>
+    </div>
+    <div class="stack-controls">
+        <button onclick="window.ObjectStackManager.showAll()" class="tool-btn">Show All</button>
+        <button onclick="window.ObjectStackManager.hideAll()" class="tool-btn">Hide All</button>
+        <button onclick="window.ObjectStackManager.resetAllVisibility()" class="tool-btn">Reset</button>
+    </div>
+    <!-- Stack items will be dynamically added here -->
+</div>
+
+<div style="margin-top: 10px; display: flex; gap: 5px;">
+    <button onclick="window.ObjectStackManager.selectPrevious()" style="flex: 1;">⬆ Prev</button>
+    <button onclick="window.ObjectStackManager.selectNext()" style="flex: 1;">⬇ Next</button>
+    <button onclick="window.ObjectStackManager.clearStack()" class="danger tool-btn" style="flex: 1;">Clear</button>
+</div>
+
+<div style="margin-top: 10px; padding: 8px; background: #2d2d30; border-radius: 4px; border: 1px solid #444;">
+    <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 5px;">
+        <div style="display: flex; align-items: center; gap: 4px; font-size: 10px;">
+            <div class="visibility-indicator visible" style="width: 10px; height: 10px;"></div>
+            <span>Visible</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 4px; font-size: 10px;">
+            <div class="visibility-indicator hidden" style="width: 10px; height: 10px;"></div>
+            <span>Hidden</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 4px; font-size: 10px;">
+            <div class="visibility-indicator isolated" style="width: 10px; height: 10px;"></div>
+            <span>Isolated</span>
+        </div>
+    </div>
+    <div style="font-size: 10px; color: #888;">
+        Click items to select, hover for actions
+    </div>
+</div>

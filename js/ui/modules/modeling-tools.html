@@ -1,0 +1,54 @@
+<h4>7. Finishes & Layers</h4>
+<div id="finish-status" style="font-size: 12px; color: #aaa; margin-bottom: 10px; padding: 8px; background: #2d2d30; border-radius: 4px; border: 1px solid #444;">
+    Select a wall/column to add finishes
+</div>
+
+<div id="finish-controls" style="display: none;">
+    <div style="margin-bottom: 15px;">
+        <label>Inner Finish</label>
+        <select id="finish-inner">
+            <option value="none">None</option>
+            <option value="plaster">Plaster (18mm)</option>
+            <option value="drywall">Drywall (12mm)</option>
+            <option value="tile">Tile (10mm)</option>
+            <option value="paint">Paint (5mm)</option>
+        </select>
+    </div>
+    
+    <div style="margin-bottom: 15px;">
+        <label>Outer Finish</label>
+        <select id="finish-outer">
+            <option value="none">None</option>
+            <option value="render">Render (20mm)</option>
+            <option value="brick">Brick (100mm)</option>
+            <option value="cladding_75">Cladding (75mm)</option>
+            <option value="cladding_100">Cladding (100mm)</option>
+        </select>
+    </div>
+    
+    <div style="display: flex; gap: 8px; margin-top: 15px;">
+        <button onclick="window.FinishesManager.applyFinishes()" class="primary" style="flex: 1;">Apply</button>
+        <button onclick="window.FinishesManager.removeFinishes()" class="danger" style="flex: 1;">Remove</button>
+    </div>
+</div>
+
+<div style="margin-top: 15px; padding: 10px; background: #2d2d30; border-radius: 4px; border: 1px solid #444;">
+    <h5 style="margin: 0 0 8px 0; font-size: 11px; color: #aaa;">Finish Materials</h5>
+    <div style="display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 5px;">
+        <div style="display: flex; align-items: center; gap: 4px; font-size: 10px;">
+            <div class="material-preview concrete" style="width: 12px; height: 12px;"></div>
+            <span>Concrete</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 4px; font-size: 10px;">
+            <div class="material-preview brick" style="width: 12px; height: 12px;"></div>
+            <span>Brick</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 4px; font-size: 10px;">
+            <div class="material-preview glass" style="width: 12px; height: 12px;"></div>
+            <span>Glass</span>
+        </div>
+    </div>
+    <div style="font-size: 10px; color: #888;">
+        Finishes add layers to walls/columns
+    </div>
+</div>
